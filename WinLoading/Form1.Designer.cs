@@ -66,8 +66,10 @@
             this.button10 = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
             this.button12 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.label7 = new TSkin.Label();
+            this.label9 = new TSkin.Label();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -208,7 +210,7 @@
             this.label5.ForeColor = System.Drawing.Color.DimGray;
             this.label5.Location = new System.Drawing.Point(0, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(137, 30);
+            this.label5.Size = new System.Drawing.Size(124, 30);
             this.label5.TabIndex = 0;
             this.label5.Text = "条加载";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -219,9 +221,9 @@
             this.checkBox1.Checked = true;
             this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.checkBox1.Location = new System.Drawing.Point(137, 0);
+            this.checkBox1.Location = new System.Drawing.Point(124, 0);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(70, 30);
+            this.checkBox1.Size = new System.Drawing.Size(83, 30);
             this.checkBox1.TabIndex = 2;
             this.checkBox1.Text = "后停止";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -397,7 +399,7 @@
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label6.Location = new System.Drawing.Point(0, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(137, 30);
+            this.label6.Size = new System.Drawing.Size(124, 30);
             this.label6.TabIndex = 0;
             this.label6.Text = "条加载";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -408,9 +410,9 @@
             this.checkBox2.Checked = true;
             this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.checkBox2.Location = new System.Drawing.Point(137, 0);
+            this.checkBox2.Location = new System.Drawing.Point(124, 0);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(70, 30);
+            this.checkBox2.Size = new System.Drawing.Size(83, 30);
             this.checkBox2.TabIndex = 2;
             this.checkBox2.Text = "后停止";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -523,17 +525,6 @@
             this.button12.UseVisualStyleBackColor = true;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
-            // button11
-            // 
-            this.button11.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button11.Location = new System.Drawing.Point(0, 0);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 38);
-            this.button11.TabIndex = 9;
-            this.button11.Text = "增加5";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
-            // 
             // button13
             // 
             this.button13.Dock = System.Windows.Forms.DockStyle.Left;
@@ -545,12 +536,48 @@
             this.button13.UseVisualStyleBackColor = true;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
+            // button11
+            // 
+            this.button11.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button11.Location = new System.Drawing.Point(0, 0);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(75, 38);
+            this.button11.TabIndex = 9;
+            this.button11.Text = "增加5";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // label7
+            // 
+            this.label7.Location = new System.Drawing.Point(487, 214);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(122, 49);
+            this.label7.State = true;
+            this.label7.TabIndex = 10;
+            this.label7.Text = "滑动解锁";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label9
+            // 
+            this.label9.Alpha = 100;
+            this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label9.ForeColor = System.Drawing.Color.Gold;
+            this.label9.Location = new System.Drawing.Point(627, 214);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(122, 49);
+            this.label9.State = true;
+            this.label9.TabIndex = 10;
+            this.label9.Text = "滑动解锁";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(988, 484);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.loadingLine21);
             this.Controls.Add(this.loadingLine1);
@@ -621,5 +648,7 @@
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button13;
+        private TSkin.Label label7;
+        private TSkin.Label label9;
     }
 }

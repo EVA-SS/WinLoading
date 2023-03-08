@@ -1,7 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.Threading;
 using System.Windows.Forms;
 
 namespace TSkin
@@ -52,7 +51,7 @@ namespace TSkin
                             thread.Dispose();
                         thread = new ThreadOne(() =>
                         {
-                            _value += 4F;
+                            _value += 2F;
                             if (Vertical)
                             {
                                 if (_value > Height) _value = 0F;
@@ -61,7 +60,6 @@ namespace TSkin
                             {
                                 if (_value > Width) _value = 0F;
                             }
-                            Thread.Sleep(10);
                             Invalidate();
                         }, () =>
                         {

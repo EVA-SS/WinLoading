@@ -65,12 +65,14 @@ namespace WinLoading
         private void button9_Click(object sender, System.EventArgs e)
         {
             BackColor = Color.White;
+            label7.ForeColor = Color.Black;
             panel4.ForeColor = panel3.ForeColor = panel6.ForeColor = panel8.ForeColor = Color.DimGray;
         }
 
         private void button10_Click(object sender, System.EventArgs e)
         {
             BackColor = Color.Black;
+            label7.ForeColor = Color.White;
             panel4.ForeColor = panel3.ForeColor = panel6.ForeColor = panel8.ForeColor = Color.WhiteSmoke;
         }
 

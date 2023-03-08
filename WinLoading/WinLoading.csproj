@@ -14,9 +14,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Update="TSkin\LoadingCore.cs">
-      <SubType>Component</SubType>
-    </Compile>
   </ItemGroup>
 
   <ItemGroup>
